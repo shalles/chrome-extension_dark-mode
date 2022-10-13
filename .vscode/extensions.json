@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "christian-kohler.npm-intellisense",
+    "formulahendry.auto-rename-tag",
+    "steoates.autoimport",
+    "wix.vscode-import-cost",
+    "Vue.volar"
+  ],
+  "unwantedRecommendations": [
+    "yoyo930021.vuter",
+    "esbenp.prettier-vscode"
+  ]
+}

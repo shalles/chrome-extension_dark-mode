@@ -1,0 +1,25 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll": true
+  },
+  "eslint.enable": true,
+  "eslint.format.enable": true,
+  "eslint.codeActionsOnSave.mode": "all",
+  "eslint.alwaysShowStatus": true,
+  "eslint.lintTask.enable": false,
+  "eslint.packageManager": "yarn",
+  "eslint.run": "onSave",
+  "prettier.enable": false,
+  "prettier.configPath": ".prettierrc.yml",
+  "cSpell.words": [
+    "alesir",
+    "iife",
+    "linebreak",
+    "nonwords",
+    "tsbuildinfo",
+    "webextensions"
+  ],
+}

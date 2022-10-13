@@ -1,0 +1,56 @@
+{
+  "name": "@shalles/dark-mode",
+  "version": "1.0.0",
+  "author": "shalles",
+  "description": "shalles dark mode for chrome",
+  "manifest_version": 3,
+  "icons": {
+    "128": "lamp-128@2x.png"
+  },
+  "action": {
+    "default_title": "Dark Mode",
+    "default_icon": "lamp-16@2x.png",
+    "default_popup": "src/popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content.js"
+      ],
+      "matches": [
+        "*://*/*"
+      ]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "lamp-128@2x.png",
+        "lamp-16@2x.png",
+        "src/*"
+      ],
+      "matches": [
+        "*://*/*"
+      ]
+    }
+  ],
+  "commands": {
+    "toggle-dark-mode": {
+      "suggested_key": {
+        "default": "Alt+Shift+D"
+      },
+      "description": "Toggle Dark Mode"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

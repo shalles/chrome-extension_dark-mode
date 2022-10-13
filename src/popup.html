@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Mode Popup</title>
+
+  <style>
+    .extension__popup--dark-mode-2c9ef1a * {
+      box-sizing: border-box;
+    }
+
+    .extension__popup--dark-mode-2c9ef1a {
+      display: flex;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 14px;
+    }
+
+    .popup__form--2c9ef1a {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 320px;
+    }
+
+    .popup__form--2c9ef1a button,
+    .popup__form--2c9ef1a input,
+    .popup__form--2c9ef1a select {
+      height: 28px;
+      line-height: 26px;
+      margin-right: 12px;
+      padding: 0 6px;
+      vertical-align: middle;
+      outline: none;
+      border: 1px solid #aaa;
+      border-radius: 2px;
+    }
+
+    .popup__form--2c9ef1a button {
+      padding: 0 12px;
+      cursor: pointer;
+    }
+
+    .popup__form--2c9ef1a input {
+      width: 98px;
+    }
+
+    .popup__form--2c9ef1a ::placeholder {
+      color: #bbb;
+    }
+
+    .popup__form--2c9ef1a .form__item {
+      display: flex;
+      flex-direction: column;
+      margin: 12px 0 0 0;
+    }
+
+    .popup__form--2c9ef1a .item__main {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    .popup__form--2c9ef1a .form__item.submit {
+      width: 100%;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    .popup__form--2c9ef1a .item__label {
+      width: 100px;
+      line-height: 32px;
+    }
+
+    .popup__form--2c9ef1a .item__info--sub {
+      padding-left: 100px;
+      font-size: 12px;
+      color: #9a9a9a;
+    }
+
+    .popup__form--2c9ef1a .item__button--submit {
+      background-color: #2f81f9;
+      color: #fff;
+    }
+
+    .popup__form--2c9ef1a .time-range {
+      display: none;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <section class="extension__popup--dark-mode-2c9ef1a">
+    <form class="popup__form--2c9ef1a">
+      <div class="form__item enable-type">
+        <div class="item__main">
+          <label for="enableType" class="item__label">Emit Type：</label>
+          <select name="enableType" class="enable-type-selector item__input">
+            <option value="system"> system </option>
+            <option value="time-range"> time range </option>
+            <option value="always"> always </option>
+            <option value="never"> never </option>
+          </select>
+        </div>
+      </div>
+      <div class="form__item time-range">
+        <div class="item__main">
+          <label class="item__label">Time Range：</label>
+          <input type="text" name="timeRange" placeholder="Start Time" />
+          <input type="text" name="timeRange" placeholder="End Time" />
+        </div>
+        <div class="item__info--sub"> eg. 20:00、06:30 </div>
+      </div>
+      <div class="form__item submit">
+        <button type="submit" class="item__button--submit"> Update & Reload </button>
+      </div>
+    </form>
+  </section>
+
+  <script type="module" src="./popup.ts"></script>
+
+</body>
+
+</html>
