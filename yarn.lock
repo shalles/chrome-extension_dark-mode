@@ -67,10 +67,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@shalles/dark-mode@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@shalles/dark-mode/-/dark-mode-1.0.2.tgz#4d0c44d20cb66a6957ace1a5338474dafafca017"
-  integrity sha512-At19PJL1QQSPwaySGW3eGgC7U8PyPVa7r7H0HIp2tAzwDcxUSIgvMFWiwXcNRV6wuUTW+Sf5+AbgcxATbsMlrg==
+"@shalles/dark-mode@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@shalles/dark-mode/-/dark-mode-1.0.3.tgz#4863fd88e05bf75bddb689e3500a41337a941c18"
+  integrity sha512-A4Ezsq1BiG0445E/FcQrRdxoylLOxkbzPdWkX9STAPUR3kDhpOkS7Ek8tqtsKUwNlwb98Jf8Q4j51NU/n86qDA==
 
 "@types/chrome@^0.0.197":
   version "0.0.197"

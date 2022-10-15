@@ -1,6 +1,6 @@
 {
   "name": "@shalles/dark-mode",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "shalles",
   "description": "shalles dark mode for chrome",
   "manifest_version": 3,
